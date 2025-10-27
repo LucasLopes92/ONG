@@ -1,0 +1,183 @@
+/* =======================
+   Paleta de cores
+   ======================= */
+/* 
+.color1 { #cbdad5 } - Fundo claro / áreas neutras
+.color2 { #89a7b1 } - Destaques suaves
+.color3 { #566981 } - Texto secundário
+.color4 { #3a415a } - Elementos principais
+.color5 { #34344e } - Fundo escuro / Header e Footer
+*/
+
+/* =======================
+   Fonte e Reset
+   ======================= */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  background-color: #cbdad5;
+  color: #34344e;
+  line-height: 1.6;
+}
+
+/* =======================
+   Cabeçalho
+   ======================= */
+header {
+  background-color: #34344e;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 60px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+}
+
+header h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.8rem;
+  color: #cbdad5;
+}
+
+/* =======================
+   Menu de Navegação
+   ======================= */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+nav ul li {
+  position: relative;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #cbdad5;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #89a7b1;
+}
+
+/* Submenu */
+nav ul li ul {
+  display: none;
+  position: absolute;
+  background-color: #3a415a;
+  top: 100%;
+  left: 0;
+  list-style: none;
+  padding: 10px 0;
+  border-radius: 8px;
+  min-width: 160px;
+}
+
+nav ul li:hover ul {
+  display: block;
+}
+
+nav ul li ul li {
+  padding: 10px 20px;
+}
+
+nav ul li ul li a {
+  color: #cbdad5;
+  font-weight: 500;
+}
+
+nav ul li ul li a:hover {
+  color: #89a7b1;
+}
+
+/* =======================
+   Hero Section (Carrossel)
+   ======================= */
+.hero {
+  margin-top: 90px;
+  width: 100%;
+  height: 70vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  animation: fade 20s infinite;
+  border-radius: 0 0 25px 25px;
+}
+
+@keyframes fade {
+  0%, 20% { opacity: 1; }
+  25%, 95% { opacity: 0; }
+}
+
+/* =======================
+   Seções de Conteúdo
+   ======================= */
+section {
+  padding: 60px 80px;
+  text-align: center;
+}
+
+section h2 {
+  font-family: 'Montserrat', sans-serif;
+  color: #3a415a;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+section p {
+  color: #566981;
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* =======================
+   Rodapé
+   ======================= */
+footer {
+  background-color: #34344e;
+  color: #cbdad5;
+  text-align: center;
+  padding: 25px 0;
+  font-size: 0.9rem;
+  margin-top: 40px;
+  border-top: 3px solid #566981;
+}
+
+/* =======================
+   Responsividade
+   ======================= */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    padding: 10px 20px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  section {
+    padding: 40px 20px;
+  }
+}

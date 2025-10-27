@@ -1,57 +1,108 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ONG Amigos dos Animais</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amigo Bicho</title>
+
+  <!-- Fontes -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="src/style.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="src/css/style.css" />
 </head>
 <body>
+  <!-- Cabeçalho -->
   <header class="header">
-    <div class="logo">🐾 Amigos dos Animais</div>
-    <nav class="nav" id="nav">
-      <ul>
-        <li><a href="#inicio">Início</a></li>
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#animais">Animais</a></li>
-        <li><a href="#contato">Contato</a></li>
+    <div class="logo">
+      <img src="img/logo.png" alt="Logo Amigo Bicho">
+      <span class="logo-text">Amigo Bicho</span>
+    </div>
+
+    <nav class="navbar">
+      <ul class="menu">
+        <li><a href="#">Home</a></li>
+        <li class="dropdown">
+          <a href="#">Institucional ▾</a>
+          <ul class="submenu">
+            <li><a href="#">Quem Somos</a></li>
+            <li><a href="#">Historia da ONG</a></li>
+            <li><a href="#">Equipe/Voluntários</a></li>
+          </ul>          
+        </li>
+        <li class="dropdown">
+          <a href="#">Projetos e Ações ▾</a>
+          <ul class="submenu">
+            <li><a href="#">Projetos Ativos</a></li>
+            <li><a href="#">Projetos Finalizados</a></li>
+            <li><a href="#">Galeria de Fotos</a></li>
+            <li><a href="#">Galeria de Vídeos</a></li>
+            <li><a href="#">Agenda</a></li>
+          </ul>          
+        </li>
+        <li class="dropdown">
+          <a href="#">Como Ajudar ▾</a>
+          <ul class="submenu">
+            <li><a href="#">Doações Financeiras</a></li>
+            <li><a href="#">Doações de Itens</a></li>
+            <li><a href="#">Seja Voluntário</a></li>
+            <li><a href="#">Parcerias</a></li>
+          </ul>          
+        </li>
+        <li class="dropdown">
+          <a href="#">Contato e Localização ▾</a>
+          <ul class="submenu">
+            <li><a href="#">Formulario de Contato</a></li>
+            <li><a href="#">Fone/Whatsapp</a></li>
+            <li><a href="#">Endereço e Mapa</a></li>
+          </ul>          
+        </li>
+        <li class="dropdown">
+          <a href="#">Transparência ▾</a>
+          <ul class="submenu">
+            <li><a href="#">Relatorios Anuais</a></li>
+            <li><a href="#">Prestação de Contas</a></li>
+            <li><a href="#">Estatuto</a></li>
+          </ul>          
+        </li>
+        <li><a href="#">Sobre</a></li>
+        <li><a href="#">Contato</a></li>
       </ul>
     </nav>
-    <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+
+    <div class="menu-toggle" id="menu-toggle">☰</div>
   </header>
 
-  <section id="inicio" class="hero">
-    <h1>Adote, ame, transforme vidas</h1>
-    <p>Ajude-nos a encontrar um lar para cada amigo peludo.</p>
-    <button class="btn">Saiba Mais</button>
-  </section>
-
-  <section id="sobre" class="sobre">
-    <h2>Sobre Nós</h2>
-    <p>Somos uma ONG dedicada ao resgate e adoção responsável de animais em situação de vulnerabilidade.</p>
-  </section>
-
-  <section id="animais" class="animais">
-    <h2>Nossos Animais</h2>
-    <div class="grid">
-      <div class="card">
-        <img src="../img/3.jpg" alt="Cachorro">
-        <h3>Thor</h3>
-        <p>Cheio de energia e amor pra dar!</p>
-      </div>
-      <div class="card">
-        <img src="../img/4.jpg" alt="Gato">
-        <h3>Luna</h3>
-        <p>Carinhosa e companheira, pronta para adoção.</p>
-      </div>
+  <!-- Carrossel -->
+  <section class="carousel">
+    <div class="slides">
+      <img src="img/animais.jpg" class="active" alt="animais">
+      <img src="img/cao_e_gato.jpg" alt="cao_e_gato">
+      <img src="img/cao_feliz.jpg" alt="cao_feliz">
+      <img src="img/filhotes.jpg" alt="filhotes">
     </div>
+    <button class="prev">&#10094;</button>
+    <button class="next">&#10095;</button>
   </section>
 
-  <footer id="contato" class="footer">
-    <p>© 2025 Amigos dos Animais | Todos os direitos reservados.</p>
+  <!-- Conteúdo inicial -->
+  <main class="intro">
+    <h1>Bem-vindo à Amigo Bicho</h1>
+    <p>Resgatamos, cuidamos e encontramos novos lares para nossos amigos de quatro patas.</p>
+    <button class="btn">Saiba Mais</button>
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="footer">
+    <p>© 2025 Amigo Bicho — Todos os direitos reservados.</p>
+    <div class="social">
+      <a href="#">Facebook</a> |
+      <a href="#">Instagram</a> |
+      <a href="#">WhatsApp</a>
+    </div>
   </footer>
 
-  <script src="script.js"></script>
+  <!-- Script -->
+  <script src="src/js/script.js"></script>
 </body>
 </html>

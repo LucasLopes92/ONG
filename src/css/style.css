@@ -1,0 +1,233 @@
+:root {
+  --color1: #cbdad5;
+  --color2: #89a7b1;
+  --color3: #566981;
+  --color4: #3a415a;
+  --color5: #34344e;
+  --font-title: 'Montserrat', sans-serif;
+  --font-body: 'Open Sans', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color1);
+  color: var(--color5);
+}
+
+/* Header */
+.header {
+  background-color: var(--color4);
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* === LOGO (corrigido) === */
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 60px;     /* tamanho ideal da logo */
+  width: auto;      /* mantém proporção */
+  object-fit: contain;
+}
+
+/* Nome da ONG ao lado da logo */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem; /* espaço entre logo e texto */
+}
+
+.logo-text {
+  font-family: var(--font-title);
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #fff; /* branco para contrastar com o fundo do header */
+  letter-spacing: 0.5px;
+}
+
+/* Reduz em telas menores */
+@media (max-width: 768px) {
+  .logo img {
+    height: 45px;
+  }
+}
+
+.navbar .menu {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  color: var(--color2);
+}
+
+/* Dropdown */
+.dropdown {
+  position: relative;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  background-color: var(--color4);
+  list-style: none;
+  padding: 0.5rem 0;
+  top: 100%;
+  left: 0;
+  border-radius: 8px;
+  min-width: 150px;
+}
+
+.submenu li a {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: #fff;
+}
+
+.dropdown:hover .submenu {
+  display: block;
+}
+
+/* Menu toggle (mobile) */
+.menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+/* Carrossel */
+.carousel {
+  position: relative;
+  overflow: hidden;
+  height: 400px;
+}
+
+.slides img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.slides img.active {
+  opacity: 1;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 1.5rem;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* Intro */
+.intro {
+  text-align: center;
+  padding: 3rem 2rem;
+}
+
+.intro h1 {
+  font-family: var(--font-title);
+  font-size: 2rem;
+  color: var(--color4);
+  margin-bottom: 1rem;
+}
+
+.btn {
+  background-color: var(--color3);
+  color: #fff;
+  border: none;
+  padding: 0.8rem 1.6rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: var(--color5);
+}
+
+/* Footer */
+.footer {
+  background-color: var(--color5);
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+.footer .social a {
+  color: var(--color2);
+  text-decoration: none;
+  margin: 0 0.3rem;
+}
+
+.footer .social a:hover {
+  color: #fff;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .navbar .menu {
+    display: none;
+    flex-direction: column;
+    background-color: var(--color4);
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 60%;
+    border-radius: 0 0 0 12px;
+    padding: 1rem;
+  }
+
+  .navbar .menu.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .dropdown:hover .submenu {
+    display: none; /* Desabilita hover em mobile */
+  }
+}
