@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doação Financeira - Pet Resgate</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <!-- CABEÇALHO E NAVEGAÇÃO -->
+  <header>
+    <div class="container">
+      <div class="header-content">
+        <div class="logo">🐾 Pet Resgate</div>
+        <nav>
+          <a href="index.html">Institucional</a>
+          <a href="projetos.html">Projetos e Ações</a>
+          <a href="como_ajudar.html">Como Ajudar</a>
+          <a href="contato.html">Contato e Localização</a>
+          <a href="transparencia.html">Transparência</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- BANNER -->
+  <section class="banner">
+    <div class="banner-content">
+      <h1>Doação Financeira</h1>
+      <p>Sua contribuição faz toda a diferença</p>
+    </div>
+  </section>
+
+  <!-- FORMULÁRIO DE DOAÇÃO -->
+  <section style="padding: 48px 0;">
+    <div class="container">
+      <div style="max-width: 600px; margin: 0 auto;">
+        <div style="background-color: var(--color-primary); border-radius: 16px; padding: 48px 32px;">
+          <h2 style="color: var(--color-dark); text-align: center; margin-bottom: 32px;">Doação Financeira</h2>
+          
+          <p style="text-align: center; color: var(--color-dark); margin-bottom: 32px;">
+            Olá, selecione o valor da sua assinatura para Doação
+          </p>
+
+          <form onsubmit="handleDoacao(event)">
+            <div class="form-group">
+              <label style="color: var(--color-dark);">Outro Valor</label>
+              <input type="text" placeholder="Digite o valor" style="background-color: white; border: none; color: var(--color-dark);">
+            </div>
+
+            <div class="form-group">
+              <label style="color: var(--color-dark);">Valor</label>
+              <input type="text" placeholder="R$1000" style="background-color: white; border: none; color: var(--color-dark);">
+            </div>
+
+            <div style="display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 24px;">
+              <button type="button" class="btn btn-outline" style="flex: 1; min-width: 80px; border-color: var(--color-dark); color: var(--color-dark);">R$50</button>
+              <button type="button" class="btn btn-outline" style="flex: 1; min-width: 80px; border-color: var(--color-dark); color: var(--color-dark);">R$200</button>
+              <button type="button" class="btn btn-outline" style="flex: 1; min-width: 80px; border-color: var(--color-dark); color: var(--color-dark);">R$200</button>
+              <button type="button" class="btn btn-dark" style="flex: 1; min-width: 80px;">Outro Valor</button>
+            </div>
+
+            <div class="form-group">
+              <label style="color: var(--color-dark);">Formas de Pagamento</label>
+              <select style="background-color: white; border: none; color: var(--color-dark);">
+                <option>PIX</option>
+                <option>Cartão de Crédito</option>
+                <option>Transferência Bancária</option>
+              </select>
+            </div>
+
+            <div style="background-color: rgba(52, 52, 78, 0.1); padding: 16px; border-radius: 8px; margin-bottom: 24px;">
+              <p style="color: var(--color-dark); font-size: 14px; margin: 0;">
+                <strong>PIX:</strong> Clique para copiar a chave
+              </p>
+              <p style="color: var(--color-dark); font-size: 12px; margin: 8px 0 0 0;">
+                Cartão de Crédito
+              </p>
+            </div>
+
+            <button type="submit" class="btn btn-dark" style="width: 100%;">
+              Enviar
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RODAPÉ -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Pet Resgate</h3>
+          <p>Dedicada ao resgate e reabilitação de animais em necessidade.</p>
+        </div>
+        <div class="footer-section">
+          <h3>Links Rápidos</h3>
+          <ul style="list-style: none;">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="projetos.html">Projetos</a></li>
+            <li><a href="como_ajudar.html">Como Ajudar</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Contato</h3>
+          <p>📧 geral@petslistacom.br</p>
+          <p>📱 (31) 98746 7000</p>
+          <p>📍 Minas Gerais, Brasil</p>
+        </div>
+        <div class="footer-section">
+          <h3>Redes Sociais</h3>
+          <p>
+            <a href="#">Facebook</a> | 
+            <a href="#">Instagram</a> | 
+            <a href="#">WhatsApp</a>
+          </p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Pet Resgate. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function handleDoacao(event) {
+      event.preventDefault();
+      window.location.href = 'confirmacao_doacao_financeira.html';
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galeria de Fotos - Pet Resgate</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <!-- CABEÇALHO E NAVEGAÇÃO -->
+  <header>
+    <div class="container">
+      <div class="header-content">
+        <div class="logo">🐾 Pet Resgate</div>
+        <nav>
+          <a href="index.html">Institucional</a>
+          <a href="projetos.html">Projetos e Ações</a>
+          <a href="como_ajudar.html">Como Ajudar</a>
+          <a href="contato.html">Contato e Localização</a>
+          <a href="transparencia.html">Transparência</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- BANNER -->
+  <section class="banner">
+    <div class="banner-content">
+      <h1>Galeria de Fotos</h1>
+      <p>Conheça os animais que resgatamos e transformamos</p>
+    </div>
+  </section>
+
+  <!-- GALERIA -->
+  <section>
+    <div class="container">
+      <div class="section-title">
+        <h2>Galeria de Fotos</h2>
+        <div style="display: flex; align-items: center; justify-content: center; gap: 16px; margin-top: 24px;">
+          <span style="font-size: 32px;">🐾</span>
+        </div>
+      </div>
+
+      <div class="grid grid-3">
+        <!-- Foto 1 -->
+        <div class="card" style="cursor: pointer;" onclick="openModal('modal1')">
+          <div style="width: 100%; height: 250px; background: linear-gradient(135deg, #D4A574 0%, #C9915C 100%); border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-bottom: 16px; overflow: hidden;">
+            <div style="width: 100%; height: 100%; background: linear-gradient(135deg, #D4A574 0%, #C9915C 100%); display: flex; align-items: center; justify-content: center; color: white; font-size: 48px;">📸</div>
+          </div>
+          <h3 class="card-title">Foto 1</h3>
+          <p class="card-text">Clique para ampliar</p>
+        </div>
+
+        <!-- Foto 2 -->
+        <div class="card" style="cursor: pointer;" onclick="openModal('modal2')">
+          <div style="width: 100%; height: 250px; background: linear-gradient(135deg, #D4A574 0%, #C9915C 100%); border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-bottom: 16px; overflow: hidden;">
+            <div style="width: 100%; height: 100%; background: linear-gradient(135deg, #D4A574 0%, #C9915C 100%); display: flex; align-items: center; justify-content: center; color: white; font-size: 48px;">📸</div>
+          </div>
+          <h3 class="card-title">Foto 2</h3>
+          <p class="card-text">Clique para ampliar</p>
+        </div>
+
+        <!-- Foto 3 -->
+        <div class="card" style="cursor: pointer;" onclick="openModal('modal3')">
+          <div style="width: 100%; height: 250px; background: linear-gradient(135deg, #D4A574 0%, #C9915C 100%); border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-bottom: 16px; overflow: hidden;">
+            <div style="width: 100%; height: 100%; background: linear-gradient(135deg, #D4A574 0%, #C9915C 100%); display: flex; align-items: center; justify-content: center; color: white; font-size: 48px;">📸</div>
+          </div>
+          <h3 class="card-title">Foto 3</h3>
+          <p class="card-text">Clique para ampliar</p>
+        </div>
+
+        <!-- Foto 4 -->
+        <div class="card" style="cursor: pointer;" onclick="openModal('modal4')">
+          <div style="width: 100%; height: 250px; background: linear-gradient(135deg, #D4A574 0%, #C9915C 100%); border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-bottom: 16px; overflow: hidden;">
+            <div style="width: 100%; height: 100%; background: linear-gradient(135deg, #D4A574 0%, #C9915C 100%); display: flex; align-items: center; justify-content: center; color: white; font-size: 48px;">📸</div>
+          </div>
+          <h3 class="card-title">Foto 4</h3>
+          <p class="card-text">Clique para ampliar</p>
+        </div>
+
+        <!-- Foto 5 -->
+        <div class="card" style="cursor: pointer;" onclick="openModal('modal5')">
+          <div style="width: 100%; height: 250px; background: linear-gradient(135deg, #D4A574 0%, #C9915C 100%); border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-bottom: 16px; overflow: hidden;">
+            <div style="width: 100%; height: 100%; background: linear-gradient(135deg, #D4A574 0%, #C9915C 100%); display: flex; align-items: center; justify-content: center; color: white; font-size: 48px;">📸</div>
+          </div>
+          <h3 class="card-title">Foto 5</h3>
+          <p class="card-text">Clique para ampliar</p>
+        </div>
+
+        <!-- Foto 6 -->
+        <div class="card" style="cursor: pointer;" onclick="openModal('modal6')">
+          <div style="width: 100%; height: 250px; background: linear-gradient(135deg, #D4A574 0%, #C9915C 100%); border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-bottom: 16px; overflow: hidden;">
+            <div style="width: 100%; height: 100%; background: linear-gradient(135deg, #D4A574 0%, #C9915C 100%); display: flex; align-items: center; justify-content: center; color: white; font-size: 48px;">📸</div>
+          </div>
+          <h3 class="card-title">Foto 6</h3>
+          <p class="card-text">Clique para ampliar</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MODAIS PARA FOTOS AMPLIADAS -->
+  <div id="modal1" class="modal" onclick="closeModal(event, 'modal1')">
+    <div class="modal-content" onclick="event.stopPropagation()">
+      <button class="modal-close" onclick="closeModal(null, 'modal1')">✕</button>
+      <div style="width: 100%; height: 400px; background: linear-gradient(135deg, #D4A574 0%, #C9915C 100%); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: white; font-size: 64px;">📸</div>
+      <h2 style="margin-top: 24px;">Foto 1</h2>
+      <p>Descrição da foto ampliada</p>
+    </div>
+  </div>
+
+  <div id="modal2" class="modal" onclick="closeModal(event, 'modal2')">
+    <div class="modal-content" onclick="event.stopPropagation()">
+      <button class="modal-close" onclick="closeModal(null, 'modal2')">✕</button>
+      <div style="width: 100%; height: 400px; background: linear-gradient(135deg, #D4A574 0%, #C9915C 100%); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: white; font-size: 64px;">📸</div>
+      <h2 style="margin-top: 24px;">Foto 2</h2>
+      <p>Descrição da foto ampliada</p>
+    </div>
+  </div>
+
+  <div id="modal3" class="modal" onclick="closeModal(event, 'modal3')">
+    <div class="modal-content" onclick="event.stopPropagation()">
+      <button class="modal-close" onclick="closeModal(null, 'modal3')">✕</button>
+      <div style="width: 100%; height: 400px; background: linear-gradient(135deg, #D4A574 0%, #C9915C 100%); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: white; font-size: 64px;">📸</div>
+      <h2 style="margin-top: 24px;">Foto 3</h2>
+      <p>Descrição da foto ampliada</p>
+    </div>
+  </div>
+
+  <div id="modal4" class="modal" onclick="closeModal(event, 'modal4')">
+    <div class="modal-content" onclick="event.stopPropagation()">
+      <button class="modal-close" onclick="closeModal(null, 'modal4')">✕</button>
+      <div style="width: 100%; height: 400px; background: linear-gradient(135deg, #D4A574 0%, #C9915C 100%); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: white; font-size: 64px;">📸</div>
+      <h2 style="margin-top: 24px;">Foto 4</h2>
+      <p>Descrição da foto ampliada</p>
+    </div>
+  </div>
+
+  <div id="modal5" class="modal" onclick="closeModal(event, 'modal5')">
+    <div class="modal-content" onclick="event.stopPropagation()">
+      <button class="modal-close" onclick="closeModal(null, 'modal5')">✕</button>
+      <div style="width: 100%; height: 400px; background: linear-gradient(135deg, #D4A574 0%, #C9915C 100%); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: white; font-size: 64px;">📸</div>
+      <h2 style="margin-top: 24px;">Foto 5</h2>
+      <p>Descrição da foto ampliada</p>
+    </div>
+  </div>
+
+  <div id="modal6" class="modal" onclick="closeModal(event, 'modal6')">
+    <div class="modal-content" onclick="event.stopPropagation()">
+      <button class="modal-close" onclick="closeModal(null, 'modal6')">✕</button>
+      <div style="width: 100%; height: 400px; background: linear-gradient(135deg, #D4A574 0%, #C9915C 100%); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: white; font-size: 64px;">📸</div>
+      <h2 style="margin-top: 24px;">Foto 6</h2>
+      <p>Descrição da foto ampliada</p>
+    </div>
+  </div>
+
+  <!-- RODAPÉ -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Pet Resgate</h3>
+          <p>Dedicada ao resgate e reabilitação de animais em necessidade.</p>
+        </div>
+        <div class="footer-section">
+          <h3>Links Rápidos</h3>
+          <ul style="list-style: none;">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="projetos.html">Projetos</a></li>
+            <li><a href="como_ajudar.html">Como Ajudar</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Contato</h3>
+          <p>📧 geral@petslistacom.br</p>
+          <p>📱 (31) 98746 7000</p>
+          <p>📍 Minas Gerais, Brasil</p>
+        </div>
+        <div class="footer-section">
+          <h3>Redes Sociais</h3>
+          <p>
+            <a href="#">Facebook</a> | 
+            <a href="#">Instagram</a> | 
+            <a href="#">WhatsApp</a>
+          </p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Pet Resgate. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function openModal(modalId) {
+      document.getElementById(modalId).classList.add('active');
+    }
+
+    function closeModal(event, modalId) {
+      if (event === null || event.target.id === modalId) {
+        document.getElementById(modalId).classList.remove('active');
+      }
+    }
+  </script>
+</body>
+</html>

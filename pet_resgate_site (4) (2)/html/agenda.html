@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agenda - Pet Resgate</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <!-- CABEÇALHO E NAVEGAÇÃO -->
+  <header>
+    <div class="container">
+      <div class="header-content">
+        <div class="logo">🐾 Pet Resgate</div>
+        <nav>
+          <a href="index.html">Institucional</a>
+          <a href="projetos.html">Projetos e Ações</a>
+          <a href="como_ajudar.html">Como Ajudar</a>
+          <a href="contato.html">Contato e Localização</a>
+          <a href="transparencia.html">Transparência</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- BANNER -->
+  <section class="banner">
+    <div class="banner-content">
+      <h1>Agenda</h1>
+      <p>Agende um horário conosco</p>
+    </div>
+  </section>
+
+  <!-- FORMULÁRIO DE AGENDA -->
+  <section style="padding: 48px 0;">
+    <div class="container">
+      <div style="max-width: 600px; margin: 0 auto;">
+        <div style="background-color: var(--color-primary); border-radius: 16px; padding: 48px 32px;">
+          <h2 style="color: var(--color-dark); text-align: center; margin-bottom: 32px;">Agenda</h2>
+          
+          <form onsubmit="handleAgenda(event)">
+            <!-- Calendário -->
+            <div class="form-group">
+              <label style="color: var(--color-dark);">Outubro de 2025</label>
+              <div style="background-color: white; padding: 16px; border-radius: 8px; margin-bottom: 16px;">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
+                  <span style="color: var(--color-dark); font-weight: 600;">Outubro 2025</span>
+                  <div style="display: flex; gap: 8px;">
+                    <button type="button" class="btn btn-dark" style="padding: 4px 8px; font-size: 12px;">▼</button>
+                    <button type="button" class="btn btn-dark" style="padding: 4px 8px; font-size: 12px;">▲</button>
+                  </div>
+                </div>
+                
+                <div style="display: grid; grid-template-columns: repeat(7, 1fr); gap: 4px; text-align: center;">
+                  <div style="font-weight: 600; color: var(--color-dark); font-size: 12px;">D</div>
+                  <div style="font-weight: 600; color: var(--color-dark); font-size: 12px;">S</div>
+                  <div style="font-weight: 600; color: var(--color-dark); font-size: 12px;">T</div>
+                  <div style="font-weight: 600; color: var(--color-dark); font-size: 12px;">Q</div>
+                  <div style="font-weight: 600; color: var(--color-dark); font-size: 12px;">Q</div>
+                  <div style="font-weight: 600; color: var(--color-dark); font-size: 12px;">S</div>
+                  <div style="font-weight: 600; color: var(--color-dark); font-size: 12px;">S</div>
+                  
+                  <div style="color: #999; font-size: 12px;">28</div>
+                  <div style="color: #999; font-size: 12px;">29</div>
+                  <div style="color: #999; font-size: 12px;">30</div>
+                  <div style="color: var(--color-dark); font-size: 12px;">1</div>
+                  <div style="color: var(--color-dark); font-size: 12px;">2</div>
+                  <div style="color: var(--color-dark); font-size: 12px;">3</div>
+                  <div style="color: var(--color-dark); font-size: 12px;">4</div>
+                  
+                  <div style="color: var(--color-dark); font-size: 12px;">5</div>
+                  <div style="color: var(--color-dark); font-size: 12px;">6</div>
+                  <div style="color: var(--color-dark); font-size: 12px;">7</div>
+                  <div style="color: var(--color-dark); font-size: 12px;">8</div>
+                  <div style="color: var(--color-dark); font-size: 12px;">9</div>
+                  <div style="color: var(--color-dark); font-size: 12px;">10</div>
+                  <div style="color: var(--color-dark); font-size: 12px;">11</div>
+                  
+                  <div style="color: var(--color-dark); font-size: 12px;">12</div>
+                  <div style="color: var(--color-dark); font-size: 12px;">13</div>
+                  <div style="color: var(--color-dark); font-size: 12px;">14</div>
+                  <div style="color: var(--color-dark); font-size: 12px;">15</div>
+                  <div style="color: var(--color-dark); font-size: 12px;">16</div>
+                  <div style="color: var(--color-dark); font-size: 12px;">17</div>
+                  <div style="color: var(--color-dark); font-size: 12px;">18</div>
+                  
+                  <div style="color: var(--color-dark); font-size: 12px; background-color: var(--color-dark); color: white; padding: 4px; border-radius: 4px;">19</div>
+                  <div style="color: var(--color-dark); font-size: 12px;">20</div>
+                  <div style="color: var(--color-dark); font-size: 12px;">21</div>
+                  <div style="color: var(--color-dark); font-size: 12px;">22</div>
+                  <div style="color: var(--color-dark); font-size: 12px;">23</div>
+                  <div style="color: var(--color-dark); font-size: 12px;">24</div>
+                  <div style="color: var(--color-dark); font-size: 12px;">25</div>
+                  
+                  <div style="color: var(--color-dark); font-size: 12px;">26</div>
+                  <div style="color: var(--color-dark); font-size: 12px;">27</div>
+                  <div style="color: var(--color-dark); font-size: 12px;">28</div>
+                  <div style="color: var(--color-dark); font-size: 12px;">29</div>
+                  <div style="color: var(--color-dark); font-size: 12px;">30</div>
+                  <div style="color: var(--color-dark); font-size: 12px;">31</div>
+                  <div style="color: #999; font-size: 12px;">1</div>
+                </div>
+              </div>
+
+              <div style="text-align: center; background-color: rgba(52, 52, 78, 0.1); padding: 12px; border-radius: 8px; margin-bottom: 16px;">
+                <span style="color: var(--color-dark); font-weight: 600;">19/10/2025</span>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-dark" style="width: 100%;">
+              Agendar
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RODAPÉ -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Pet Resgate</h3>
+          <p>Dedicada ao resgate e reabilitação de animais em necessidade.</p>
+        </div>
+        <div class="footer-section">
+          <h3>Links Rápidos</h3>
+          <ul style="list-style: none;">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="projetos.html">Projetos</a></li>
+            <li><a href="como_ajudar.html">Como Ajudar</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Contato</h3>
+          <p>📧 geral@petslistacom.br</p>
+          <p>📱 (31) 98746 7000</p>
+          <p>📍 Minas Gerais, Brasil</p>
+        </div>
+        <div class="footer-section">
+          <h3>Redes Sociais</h3>
+          <p>
+            <a href="#">Facebook</a> | 
+            <a href="#">Instagram</a> | 
+            <a href="#">WhatsApp</a>
+          </p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Pet Resgate. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function handleAgenda(event) {
+      event.preventDefault();
+      window.location.href = 'confirmacao_agenda.html';
+    }
+  </script>
+</body>
+</html>

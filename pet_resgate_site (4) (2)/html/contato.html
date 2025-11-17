@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato - Pet Resgate</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <!-- CABEÇALHO E NAVEGAÇÃO -->
+  <header>
+    <div class="container">
+      <div class="header-content">
+        <div class="logo">🐾 Pet Resgate</div>
+        <nav>
+          <a href="index.html">Institucional</a>
+          <a href="projetos.html">Projetos e Ações</a>
+          <a href="como_ajudar.html">Como Ajudar</a>
+          <a href="contato.html" class="active">Contato e Localização</a>
+          <a href="transparencia.html">Transparência</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- BANNER -->
+  <section class="banner">
+    <div class="banner-content">
+      <h1>Formulários de Contato</h1>
+      <p>Entre em contato conosco</p>
+    </div>
+  </section>
+
+  <!-- SEÇÃO DE CONTATO -->
+  <section>
+    <div class="container">
+      <div class="section-title">
+        <h2>Formulários de Contato</h2>
+        <div style="display: flex; align-items: center; justify-content: center; gap: 16px; margin-top: 24px;">
+          <span style="font-size: 32px;">🐾</span>
+        </div>
+      </div>
+
+      <div class="grid grid-2">
+        <!-- WhatsApp -->
+        <div style="text-align: center; padding: 32px; background-color: #F5F5F5; border-radius: 16px;">
+          <div style="font-size: 48px; margin-bottom: 16px;">💬</div>
+          <h3 style="color: var(--color-dark); margin-bottom: 12px;">WhatsApp</h3>
+          <p style="color: var(--color-text-light); margin-bottom: 16px;">(31) 98746 7000</p>
+          <a href="https://wa.me/5531987467000" class="btn btn-primary" target="_blank">Enviar Mensagem</a>
+        </div>
+
+        <!-- Email -->
+        <div style="text-align: center; padding: 32px; background-color: #F5F5F5; border-radius: 16px;">
+          <div style="font-size: 48px; margin-bottom: 16px;">📧</div>
+          <h3 style="color: var(--color-dark); margin-bottom: 12px;">Email</h3>
+          <p style="color: var(--color-text-light); margin-bottom: 16px;">geral@petslistacom.br</p>
+          <a href="mailto:geral@petslistacom.br" class="btn btn-primary">Enviar Email</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FORMULÁRIO DE CONTATO -->
+  <section style="background-color: #F5F5F5;">
+    <div class="container">
+      <div style="max-width: 600px; margin: 0 auto;">
+        <div style="background-color: var(--color-dark); border-radius: 16px; padding: 48px 32px; color: white;">
+          <h2 style="color: white; text-align: center; margin-bottom: 32px;">Formulário de Contato</h2>
+          
+          <form onsubmit="handleContato(event)">
+            <div class="form-group">
+              <label style="color: white;">Mensagem</label>
+              <textarea placeholder="Sua mensagem aqui..." required style="background-color: #CBDAD5; border: none; color: var(--color-dark); min-height: 120px;"></textarea>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label style="color: white;">Nome</label>
+                <input type="text" placeholder="Seu nome" required style="background-color: #CBDAD5; border: none; color: var(--color-dark);">
+              </div>
+              <div class="form-group">
+                <label style="color: white;">E-mail</label>
+                <input type="email" placeholder="seu@email.com" required style="background-color: #CBDAD5; border: none; color: var(--color-dark);">
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;">
+              Enviar
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RODAPÉ -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Pet Resgate</h3>
+          <p>Dedicada ao resgate e reabilitação de animais em necessidade.</p>
+        </div>
+        <div class="footer-section">
+          <h3>Links Rápidos</h3>
+          <ul style="list-style: none;">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="projetos.html">Projetos</a></li>
+            <li><a href="como_ajudar.html">Como Ajudar</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Contato</h3>
+          <p>📧 geral@petslistacom.br</p>
+          <p>📱 (31) 98746 7000</p>
+          <p>📍 Minas Gerais, Brasil</p>
+        </div>
+        <div class="footer-section">
+          <h3>Redes Sociais</h3>
+          <p>
+            <a href="#">Facebook</a> | 
+            <a href="#">Instagram</a> | 
+            <a href="#">WhatsApp</a>
+          </p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Pet Resgate. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function handleContato(event) {
+      event.preventDefault();
+      window.location.href = 'confirmacao_contato.html';
+    }
+  </script>
+</body>
+</html>
